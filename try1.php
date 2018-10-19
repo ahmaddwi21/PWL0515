@@ -12,7 +12,7 @@
 
     $rata2matakuliah = array_sum($nilai[0]["PWL"])/count($nilai[0]["PWL"]);
 
-    $rata2perAnak = array_sum($nilai[0]["PWL"])/count($nilai[0]["PWL"]);
+    for()
 
 
     echo $rata2matakuliah;
