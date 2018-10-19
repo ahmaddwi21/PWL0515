@@ -1,16 +1,21 @@
 <?php
-    $kendaraan = array(
-        array("mobil" => array("merk" => "toyota", "type" => "Vios")),
-        "sepeda",
-        "truk",
-        array("motor"=> array("honda","yamaha", "suzuki"))
-    );
+    $nilai = [
+        ["PWL"=>["Toni"=>80, "Dewi"=>90, "Nina"=>75, "Reza"=>60]],
+        ["AI"=>["Toni"=>60, "Dewi"=>70, "Nina"=>95, "Reza"=>50]],
+        ["SBD"=>["Toni"=>75, "Dewi"=>75, "Nina"=>80, "Reza"=>70]]
+    ];
 
-    
-    var_dump($kendaraan);
-    echo "<br>";
-    echo "<br>";
-    print_r($kendaraan);
-    echo "<br>";
-    echo "<br>";
+    $toni = $nilai[0]["PWL"]["Toni"] + $nilai[1]["AI"]["Toni"] + $nilai[2]["SBD"]["Toni"];
+    $dewi = $nilai[0]["PWL"]["Dewi"] + $nilai[1]["AI"]["Dewi"] + $nilai[2]["SBD"]["Dewi"];
+    $nina = $nilai[0]["PWL"]["Nina"] + $nilai[1]["AI"]["Nina"] + $nilai[2]["SBD"]["Nina"];
+    $reza = $nilai[0]["PWL"]["Reza"] + $nilai[1]["AI"]["Reza"] + $nilai[2]["SBD"]["Reza"];
+
+    $rata2matakuliah = array_sum($nilai[0]["PWL"])/count($nilai[0]["PWL"]);
+
+    $rata2perAnak = array_sum($nilai[0]["PWL"])/count($nilai[0]["PWL"]);
+
+
+    echo $rata2matakuliah;
+
+    for()
 ?>
