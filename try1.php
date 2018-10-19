@@ -1,18 +1,16 @@
-<form action="#" method="post" enctype="multipart/form-data">
-    <fieldset>
-        <legend><h2>Form Registrasi</h2></legend>
-        Pilih File : <input type="file" name="berkas" value=""><br><br>
-        <input type="hidden" name="action" value="ïnsert">
-        <input type="reset" value="Reset" name="reset">
-        <input type="submit" value="SUBMIT" name="submit">
-    </fieldset>
-</form>
-
 <?php
-    if(isset($_POST['submit'])){
-        echo "<pre>";
-        print_r($_FILES);
-        echo "</pre>";
-    }
+    $kendaraan = array(
+        array("mobil" => array("merk" => "toyota", "type" => "Vios")),
+        "sepeda",
+        "truk",
+        array("motor"=> array("honda","yamaha", "suzuki"))
+    );
 
+    
+    var_dump($kendaraan);
+    echo "<br>";
+    echo "<br>";
+    print_r($kendaraan);
+    echo "<br>";
+    echo "<br>";
 ?>
