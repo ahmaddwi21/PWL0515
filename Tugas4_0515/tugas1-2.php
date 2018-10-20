@@ -1,8 +1,8 @@
-<form action="?action2" method="post">
+<form action="tugas1-3.php" method="post">
     <fieldset>
         <legend>Ticket Online</legend>
         <?php
-            for($jumlah=1; $jumlah<=$_POST['penumpang'];$jumlah++){
+            for($jumlah=0; $jumlah<$_POST['penumpang'];$jumlah++){
                 echo "Nama Penumpang : <input type='text' name='namaPenumpang[]'><br><br>";
             }
         ?>
